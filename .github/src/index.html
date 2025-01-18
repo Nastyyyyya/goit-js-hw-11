@@ -9,7 +9,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="container"></div>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
+                >Timer</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <form class="search-form">
@@ -21,12 +31,9 @@
         <button type="submit">Search</button>
       </form>
 
-      <div class="loading">
-        <div class="loader"></div>
-      </div>
+      <div class="loading" style="display: none">Loading...</div>
 
       <div class="gallery"></div>
     </main>
-    <script type="module" src="main.js"></script>
   </body>
 </html>
